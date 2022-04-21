@@ -138,3 +138,12 @@ p
     text-decoration: none;
     color: #fff;
 }
+
+#grupo{
+    
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
