@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Times</title>
+    <title>Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header id="header" class="sticky">
+        <a href="#" class="logo">copa 2022</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Copa.html">Copa</a></li>
+        <li><a href="Time.html">Seleções</a></li>
+        <li><a href="Estádio.html">Estadios</a></li>
+        <li><a href="Grupos.html">Grupos</a></li>
+    </ul>
+    </header>
+    <!--titulo-->
+    <section class="banner" id="home">
+        <h2>País sede: <span><br> Catar</span></h2>
+    </section>
+    <!--Sobre-->
+    <section class="sec" id="about">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Informaçoes do Catar</h3>
+        <p>Localização geográfica: 0-0-0-0 
+            <br>População:000 <br>Principais atividades econômicas: </p>
+        <a href="#" class="btn">Home</a>
+        </div>
+        </div>
+    </section>
+    <!--Copa-->
+    <section class="sec" id="copa">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Sobre a Copa</h3>
+        <p>Quantas seleções participam, 
+            <br>Desde quando existe este evento, <br></p>
+        <a href="#" class="btn">Home</a>
+        </div>
+        </div>
+    </section>
+    <!---->
+    <section class="sec" id="times">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Seleções</h3>
+        <p>link</p>
+        <a href="#" class="btn">Home</a>
+        </div>
+        </div>
+    </section>
+    <!---->
+    <section class="sec" id="estadios">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Estadios</h3>
+        <p>link</p>
+        <a href="#" class="btn">Home</a>
+        </div>
+        </div>
+    </section>
+    <!---->
+    <section class="sec" id="grups">
+        <div class="content">
+        <div class="mxw800p">
+        <h3>Grupos</h3>
+        <p>link</p>
+        <a href="#" class="btn">Home</a>
+        </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>
