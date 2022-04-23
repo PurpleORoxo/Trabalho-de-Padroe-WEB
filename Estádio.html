@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estádio</title>
+    <title>Trab de padroes web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header" class="sticky">
-        <a href="#" class="logo">copa 2022</a>
+    <header id="header">
+        <a href="main.html" class="logo" style="color: #800;"><img src="logo.png" alt="copa 2022" height="75px" width="75px"></a>
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="Sobre.html">Sobre</a></li>
-        <li><a href="Copa.html">Copa</a></li>
-        <li><a href="Time.html">Seleções</a></li>
-        <li><a href="Estádio.html">Estadios</a></li>
-        <li><a href="Grupos.html">Grupos</a></li>
+        <li><a href="#" onclick="toggle()"><b>Home</b></a></li>
+        <li><a href="#about" onclick="toggle()"><b>Estádios</b></a></li>
+        <li><a href="#copa" onclick="toggle()"><b>1</b></a></li>
+        <li><a href="#times" onclick="toggle()"><b>2</b></a></li>
+        <li><a href="#estadios" onclick="toggle()"><b>3</b></a></li>
+        <li><a href="#grups" onclick="toggle()"><b>4</b></a></li>
     </ul>
+    <div class="toggle" onclick="toggle()"></div>
     </header>
     <!--titulo-->
     <section class="banner" id="home">
-        <h2>País sede: <span><br> Catar</span></h2>
+        <h2><span><br></span></h2>
     </section>
     <!--Sobre-->
     <section class="sec" id="about">
         <div class="content">
         <div class="mxw800p">
-        <h3>Informaçoes do Catar</h3>
-        <p>Localização geográfica: 0-0-0-0 
-            <br>População:000 <br>Principais atividades econômicas: </p>
-        <a href="#" class="btn">Home</a>
+        <h3>Estádios</h3>
+        <p> <br> </p>
+        <!--<a href="#" class="btn">Home</a>-->
         </div>
         </div>
     </section>
@@ -38,40 +38,36 @@
     <section class="sec" id="copa">
         <div class="content">
         <div class="mxw800p">
-        <h3>Sobre a Copa</h3>
-        <p>Quantas seleções participam, 
-            <br>Desde quando existe este evento, <br></p>
-        <a href="#" class="btn">Home</a>
+        <h3></h3>
+        <p><br></p>
+        <!--<a href="#" class="btn">Home</a>-->
         </div>
         </div>
     </section>
-    <!---->
+    <!--Seleções-->
     <section class="sec" id="times">
         <div class="content">
         <div class="mxw800p">
-        <h3>Seleções</h3>
-        <p>link</p>
-        <a href="#" class="btn">Home</a>
+        <h3></h3>
+        <p></p>
         </div>
         </div>
     </section>
-    <!---->
+    <!--Estadios-->
     <section class="sec" id="estadios">
         <div class="content">
         <div class="mxw800p">
-        <h3>Estadios</h3>
-        <p>link</p>
-        <a href="#" class="btn">Home</a>
+        <h3></h3>
+        <p></p>
         </div>
         </div>
     </section>
-    <!---->
+    <!--Grupos-->
     <section class="sec" id="grups">
         <div class="content">
         <div class="mxw800p">
-        <h3>Grupos</h3>
-        <p>link</p>
-        <a href="#" class="btn">Home</a>
+        <h3></h3>
+        <p></p>
         </div>
         </div>
     </section>
@@ -81,6 +77,10 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
     </script>
 </body>
 </html>
