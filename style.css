@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Popping:200,300,400,500,600,700,800,900&display=swa');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
 *
 {
     margin: 0;
@@ -112,6 +113,7 @@ header.sticky ul li a
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    color:#fff;
 }
 .sec .content
 {
@@ -231,6 +233,7 @@ p
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    color: #fff;
     
    
 }
@@ -239,9 +242,21 @@ p
      font-size: 30px;
      padding-left: 20px;
      padding-right: 20px;
-     border-left: 5px solid #fff;
+     border-left: 5px solid #ffffff;
      margin-left: 20px;
      border-radius: 10px;
+     color: #fff;
      
+
+}
+.Table{
+
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    font-family: sans-serif;
 
 }
