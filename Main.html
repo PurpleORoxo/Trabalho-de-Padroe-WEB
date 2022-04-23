@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header" class="sticky">
+    <header id="header">
         <a href="#" class="logo" style="color: #800000;">copa 2022</a>
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#copa">Copa</a></li>
         <li><a href="#times">Seleções</a></li>
-        <li><a href="#estadios">Estadios</a></li>
+        <li><a href="#estadios">Estádios</a></li>
         <li><a href="#grups">Grupos</a></li>
     </ul>
+    <div class="toggle" onclick="toggle()"></div>
     </header>
     <!--titulo-->
     <section class="banner" id="home">
@@ -27,7 +28,7 @@
     <section class="sec" id="about">
         <div class="content">
         <div class="mxw800p">
-        <h3>Informaçoes do Catar</h3>
+        <h3>Informações do Catar</h3>
         <p>Localização geográfica: latitudes 24° e 27°N e longitudes 50° e 52°E. 
             <br>População: 2 832 000 e densidade de 176 hab./km². <br>
             A economia baseia-se, especialmente, na 
@@ -35,7 +36,7 @@
              de 50% do Produto Interno Bruto do país. De acordo com o Observatório da
               Complexidade Econômica, o Catar possui uma balança comercial positiva com 
               saldo de US$30,7 bilhões.</p>
-        <a href="#" class="btn">Home</a>
+        <!--<a href="#" class="btn">Home</a>-->
         </div>
         </div>
     </section>
@@ -48,43 +49,37 @@
             <br>A primeira edição da Copa do Mundo aconteceu em 1930 e foi sediada pelo Uruguai. 
             Desde então, já foram realizadas edições da Copa em quase todos os continentes, 
             com exceção da Oceania.</p>
-        <a href="#" class="btn">Home</a>
+        <!--<a href="#" class="btn">Home</a>-->
         </div>
         </div>
     </section>
-    <!---->
+    <!--Seleções-->
     <section class="sec" id="times">
         <div class="content">
         <div class="mxw800p">
         <h3>Seleções</h3>
-        <a href="Seleções.html">
-        <p style="color: rgb(11, 11, 204);">Sobre as seleções</p>
-        </a>
-        <a href="#" class="btn">Home</a>
+        <p>Sãp mais de 29 seleções e mais 3 vagas ainda em aberto.</p>
+        <a href="https://www.goal.com/br/listas/quais-sao-as-selecoes-classificadas-para-a-copa-do-mundo-do/bltceb6bc1d29fe0617" class="btn">Seleções</a>
         </div>
         </div>
     </section>
-    <!---->
+    <!--Estadios-->
     <section class="sec" id="estadios">
         <div class="content">
         <div class="mxw800p">
-        <h3>Estadios</h3>
-        <a href="Estádio.html">
-        <p style="color: rgb(11, 11, 204);">Sobre as estadios</p>
-        </a>
-        <a href="#" class="btn">Home</a>
+        <h3>Estádios</h3>
+        <p>São 8 estádios no Catar</p>
+        <a href="https://www.hoteis.com/go/catar/catar-guia-estadios" class="btn">Estádios</a>
         </div>
         </div>
     </section>
-    <!---->
+    <!--Grupos-->
     <section class="sec" id="grups">
         <div class="content">
         <div class="mxw800p">
         <h3>Grupos</h3>
-        <a href="Grupos.html">
-        <p style="color: rgb(11, 11, 204);">Sobre os Grupos</p>
-        </a>
-        <a href="#" class="btn">Home</a>
+        <p>Com 8 grupos feitos por sorteio</p>
+        <a href="Grupos.html" class="btn">Quais são os grupos</a>
         </div>
         </div>
     </section>
@@ -94,6 +89,10 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+        function toggle(){
+            var header=document.querySelector("header");
+            header.classList.toggle("active");
+        }
     </script>
 </body>
 </html>
