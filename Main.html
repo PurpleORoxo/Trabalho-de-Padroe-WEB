@@ -9,14 +9,14 @@
 </head>
 <body>
     <header id="header">
-        <a href="#" class="logo" style="color: #800000;">copa 2022</a>
+        <a href="#home" class="logo" style="color: #800;"><img src="logo.png" alt="copa 2022" height="75px" width="75px"></a>
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#copa">Copa</a></li>
-        <li><a href="#times">Seleções</a></li>
-        <li><a href="#estadios">Estádios</a></li>
-        <li><a href="#grups">Grupos</a></li>
+        <li><a href="#" onclick="toggle()"><b>Home</b></a></li>
+        <li><a href="#about" onclick="toggle()"><b>Catar</b></a></li>
+        <li><a href="#copa" onclick="toggle()"><b>Copa</b></a></li>
+        <li><a href="#times" onclick="toggle()"><b>Seleções</b></a></li>
+        <li><a href="#estadios" onclick="toggle()"><b>Estádios</b></a></li>
+        <li><a href="#grups" onclick="toggle()"><b>Grupos</b></a></li>
     </ul>
     <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -58,8 +58,8 @@
         <div class="content">
         <div class="mxw800p">
         <h3>Seleções</h3>
-        <p>Sãp mais de 29 seleções e mais 3 vagas ainda em aberto.</p>
-        <a href="https://www.goal.com/br/listas/quais-sao-as-selecoes-classificadas-para-a-copa-do-mundo-do/bltceb6bc1d29fe0617" class="btn">Seleções</a>
+        <p>São mais de 29 seleções e mais 3 vagas ainda em aberto.</p>
+        <a href="https://www.goal.com/br/listas/quais-sao-as-selecoes-classificadas-para-a-copa-do-mundo-do/bltceb6bc1d29fe0617" class="btn">Veja as seleções</a>
         </div>
         </div>
     </section>
@@ -69,7 +69,7 @@
         <div class="mxw800p">
         <h3>Estádios</h3>
         <p>São 8 estádios no Catar</p>
-        <a href="https://www.hoteis.com/go/catar/catar-guia-estadios" class="btn">Estádios</a>
+        <a href="https://www.hoteis.com/go/catar/catar-guia-estadios" class="btn">Veja os estádios</a>
         </div>
         </div>
     </section>
@@ -90,7 +90,7 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         })
         function toggle(){
-            var header=document.querySelector("header");
+            var header = document.querySelector("header");
             header.classList.toggle("active");
         }
     </script>
