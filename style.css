@@ -15,6 +15,28 @@ body
     min-height: 1000px;
     background: #800000;
 }
+#gotop   
+{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 30px;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    border-radius: 30px;
+    color: #fff;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+#gotop:hover
+{
+    font-size: 20px;
+}
 header
 {
     position: fixed;
@@ -268,7 +290,7 @@ p
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    
+    color:#fff;
    
 }
 .titulos{
@@ -276,9 +298,33 @@ p
      font-size: 30px;
      padding-left: 20px;
      padding-right: 20px;
-     border-left: 5px solid #fff;
+     border-left: 5px solid #800000;
      margin-left: 20px;
      border-radius: 10px;
-     
+     color: #fff;
+
+}
+
+
+.GPL{
+
+   float: left;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 300;
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+   width: 25%;
+
+}
+
+.GPR{
+    /*float: right;*/
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    width: 25%;
 
 }

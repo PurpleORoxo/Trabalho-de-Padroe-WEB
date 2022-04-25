@@ -9,15 +9,17 @@
 </head>
 <body>
     <header id="header">
-        <a href="#main.html" class="logo" style="color: #800;"><img src="logo.png" alt="copa 2022" height="75px" width="75px"></a>
-    <ul>
-        <li><a href="#" onclick="toggle()"><b>Home</b></a></li>
-        <li><a href="#about" onclick="toggle()"><b>Catar</b></a></li>
-        <li><a href="#copa" onclick="toggle()"><b>Copa</b></a></li>
-        <li><a href="#times" onclick="toggle()"><b>Seleções</b></a></li>
-        <li><a href="#estadios" onclick="toggle()"><b>Estádios</b></a></li>
-        <li><a href="#grups" onclick="toggle()"><b>Grupos</b></a></li>
-    </ul>
+        <a href="index.html" class="logo" style="color: #800;"><img src="logo.png" alt="copa 2022" height="75px" width="75px"></a>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="toggle()"><b>Home</b></a></li>
+            <li><a href="#about" onclick="toggle()"><b>Catar</b></a></li>
+            <li><a href="#copa" onclick="toggle()"><b>Copa</b></a></li>
+            <li><a href="#times" onclick="toggle()"><b>Seleções</b></a></li>
+            <li><a href="#estadios" onclick="toggle()"><b>Estádios</b></a></li>
+            <li><a href="#grups" onclick="toggle()"><b>Grupos</b></a></li>
+        </ul>
+    </nav>
     <div class="toggle" onclick="toggle()"></div>
     </header>
     <!--titulo-->
@@ -69,7 +71,7 @@
         <div class="mxw800p">
         <h3>Estádios</h3>
         <p>São 8 estádios no Catar</p>
-        <a href="https://www.hoteis.com/go/catar/catar-guia-estadios" class="btn">Veja os estádios</a>
+        <a href="Estádio.html" class="btn">Veja os estádios</a>
         </div>
         </div>
     </section>
@@ -83,6 +85,7 @@
         </div>
         </div>
     </section>
+    <button id="gotop">Voltar ao topo</button>
 
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
@@ -93,6 +96,10 @@
             var header = document.querySelector("header");
             header.classList.toggle("active");
         }
+        var btn = document.querySelector("#gotop");
+        btn.addEventListener("click", function() {
+        window.scrollTo(0, 0);
+        });
     </script>
 </body>
 </html>
