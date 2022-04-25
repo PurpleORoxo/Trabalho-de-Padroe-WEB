@@ -282,3 +282,27 @@ p
      color: #fff;
 
 }
+
+
+.GPL{
+
+   float: left;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 300;
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+   width: 25%;
+
+}
+
+.GPR{
+    /*float: right;*/
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    width: 25%;
+
+}
