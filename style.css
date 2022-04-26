@@ -301,13 +301,12 @@ p
      margin-left: 20px;
      border-radius: 10px;
      color: #fff;
-
 }
 
 
-.GPL{
+.GP{
 
-   float: left;
+   float: none;
    color: #fff;
    font-size: 18px;
    font-weight: 300;
