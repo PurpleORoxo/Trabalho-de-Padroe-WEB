@@ -241,7 +241,8 @@ p
         background: #000;
         z-index: 1;
         transition: 0.5s;
-}
+    }
+
     header
     {
         padding: 5px 50px;
@@ -313,5 +314,12 @@ p
    margin-bottom: 20px;
    letter-spacing: 1px;
    width: 100%;
+   max-height: 600px;
+
 
 }
+
+
+
+
+
