@@ -11,10 +11,10 @@
     <header id="header" class="sticky">
         <a href="index.html" class="logo" style="color: #800;"><img src="logo.png" alt="copa 2022" height="75px" width="75px"></a>
     <ul>
-        <li><a href="#GENSEN">Tabela de Jogos</a></li>
-        <li><a href="#copa">Copa</a></li>
-        <li><a href="Seleções.html">Seleções</a></li>
-        <li><a href="Estádio.html">Estadios</a></li>
+        <li><a href="#"><b>Home</b></a></li>
+        <li><a href="#GENSEN"><b>fases</b></a></li>
+        <li><a href="Seleções.html"><b>Seleções</b></a></li>
+        <li><a href="Estádio.html"><b>Estadios</b></a></li>
     </ul>
     <div class="toggle" onclick="toggle()"></div>
     </header>
@@ -342,7 +342,10 @@
        </li>
      </ul>
      </section>
+     <button id="gotop"><ion-icon name="chevron-up-circle-outline"></ion-icon></button>
 
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
             var header = document.querySelector("header");
@@ -352,6 +355,10 @@
             var header = document.querySelector("header");
             header.classList.toggle("active");
         }
+        var btn = document.querySelector("#gotop");
+        btn.addEventListener("click", function() {
+        window.scrollTo(0, 0);
+        });
     </script>
 </body>
 </html>
