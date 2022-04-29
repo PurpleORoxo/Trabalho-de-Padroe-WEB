@@ -13,7 +13,7 @@ html
 body
 {
     min-height: 1000px;
-    background: #800000;
+    background: rgb(142, 27, 62);
 }
 #gotop   
 {
@@ -61,17 +61,21 @@ header .logo
 {
     position: relative;
     font-weight: 700;
-    color: #fff;
+    color: #800;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
 }
+header .logo:active
+{
+    size: 10%;
+}
 header ul
 {
     position: relative;
-    font-weight: 500;
+    font-weight: 300;
     font-style: bold;
     display: flex;
     justify-content: center;
@@ -89,10 +93,26 @@ header ul li a
     margin: 0 15px;
     text-decoration: none;
     font-style: bold;
-    color: #fff;
+    color: rgb(189, 189, 189);
     letter-spacing: 2px;
     font-weight: 300;
     transition: 0.6s;
+}
+header ul li a:hover
+{
+    font-size: 20px;
+}
+header ul li a:active
+{
+    color: red;
+}
+header.sticky ul li a:hover
+{
+    font-size: 20px;
+}
+header.sticky ul li a:active
+{
+    color: red;
 }
 header.sticky .logo,
 header.sticky ul li a
@@ -213,6 +233,35 @@ p
 .toggle
 {
     display: none;
+}
+.sec .content .mxw800p .text
+{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.sec .content .mxw800p .tab
+{
+    text-align: center;
+}
+.sec .content .mxw800p .tab tr
+{
+    border: 1px solid #fff;
+}
+.sec .content .mxw800p .tab td
+{
+    border: 1px solid #fff;
+}
+.gruptil
+{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 250;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 @media (max-width: 992px)
 {
