@@ -46,7 +46,7 @@ header
     font-style: bold;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
+    padding: 40px 10px;
     z-index: 10;
     transition: 0.6s;
 }
@@ -61,16 +61,16 @@ header .logo
 {
     position: relative;
     font-weight: 700;
-    color: #800;
+    color: rgb(189, 189, 189);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
 }
-header .logo:active
+header .logo:hover
 {
-    size: 10%;
+    transform: translateY(-15px);
 }
 header ul
 {
@@ -187,6 +187,16 @@ p
     font-weight: 300;
     margin-bottom: 20px;
     letter-spacing: 1px;
+}
+.sec .content .mxw800p .linktab
+{
+    text-decoration: underline #fff;
+}
+.sec .content .mxw800p .linktab h2:hover
+{
+    transform: translateY(-15px);
+    letter-spacing: 5px;
+    transition: 0.5s;
 }
 .btn
 {
@@ -340,6 +350,15 @@ p
     header ul li a
     {
         color: #000;
+    }
+    .imgest
+    {
+        width: 350px;
+    }
+    .imgest1
+    {
+        width: 350px;
+        height: 350px;
     }
 }
 @media (pointer: coarse) 
